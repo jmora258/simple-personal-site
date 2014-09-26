@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
 <head>
+	<!-- Ugly personal site --> 
 	<title>My Personal Site</title> 
 	<style>
 		body {
@@ -10,21 +11,26 @@
 			color: black;
 			font-family: helvetica;
 			text-align: center; 
-			text-shadow: 1px 1px #888888;
 		}
 
 		p {
 			font-size: 20px; 
+			padding: 10px;
 		}
 		.bio {
 			background: white;
 			box-shadow: 5px 5px 2px #888888; 
 			border: 0.5px solid white;
 			border-radius: 10px;
-			opacity: 0.7; 
+			opacity: 0.7;
 		}
 		.profile {
-
+			border: 3px solid #0099FF;
+			border-radius: 20px; 
+			box-shadow: 5px 5px 5px #888888;
+			margin-top: 10px; 
+			margin-bottom: 10px; 
+			width: 250px; 
 		}
 		#email {
 			border: 0;
@@ -32,8 +38,12 @@
 			padding: 10px;
 		}
 		input[type="submit"] {
-			background: red;
+			background: #0099FF;
+			box-shadow: 3px 3px #888; 
+			border: 1px;
+			border-radius: 2px; 
 			color: white;
+			padding: 13px;
 		}
 
 	</style> 
@@ -45,7 +55,7 @@
 <div class="bio"> 
 <p>Biography! - Lorem ipsum dolor sit amet, Curabitur blandit maximus libero eu tincidunt. Nullam eu sapien non velit interdum blandit vitae ac sapien. Fusce nisi leo, ullamcorper vitae pharetra quis, ultrices nec nibh. Ut faucibus augue nec magna mollis lacinia. Vivamus luctus dignissim nunc, quis eleifend ipsum consectetur a. Aliquam faucibus metus ut neque eleifend congue. Nullam nisi sem, lacinia ut mi vitae, convallis convallis sapien.</p> 
 </div>
-<form name"contact" action="#" method="POST"> 
+<form name"contact" action="mailto:info@mysite.com" method="POST"> 
 	<input id="email" type="email" placeholder="Your email">
 	<input type="submit"> 
 </form> 
